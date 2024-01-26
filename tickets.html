@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/favicon-32x32.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <div id="imagencabecera">
+                <section id="menucentrar">
+                        <div class="menunavegacion">
+                            <nav>
+                                <ul>
+                                    <li class="logohead"><a href="index.html"><img src="img/logo.svg" alt="logo amped"></a></li>
+                                    <li><a href="info.html">INFORMACIÓN</a></li>
+                                    <li><a href="calendari.html">CALENDARIO</a></li>
+                                    <li class="paginaactual"><a href="tickets.html">ENTRADAS</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                        
+                </section>
+        </header>
+            
+            <section>
+                <div class="tituloentradas">
+                    <h2>Compra tus Entradas</h2>
+                </div>
+
+                <div class="textoentradas">
+                    <p> Ser parte del Amped Festival es una experiencia que no querrás perderte. Ya sea que 
+                        desees estar en primera fila o disfrutar del ambiente desde un espacio VIP, tenemos 
+                        diferentes tipos de entradas para satisfacer tus necesidades. Completa el formulario a 
+                        continuación para asegurarte de estar presente en este evento musical inigualable.
+                    </p>
+                </div>
+            </section>
+
+            
+            <section>
+                    <form>
+                        <div class="formularios">
+                            
+                                <fieldset class="informacionpers">
+                                    <legend>Información Personal</legend>
+                                    <div class="infocli">
+                                        <div class="seplabel requerido">
+                                            <label for="nombre">Nombre: <span>*</span></label>
+                                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" minlength="3" maxlength="64" pattern="[A-Za-z]{3,64}" required>
+                                        </div>
+                                        
+                                        <div class="seplabel requerido">
+                                            <label for="apellidos">Apellidos: <span>*</span></label>
+                                            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" minlength="3" maxlength="128" pattern="[A-Za-z]{3,128}"  required>
+                                        </div> 
+                                    </div>
+
+                                    <div class="infocli">
+                                        <div class="seplabel requerido">
+                                            <label for="email">Correo Electrónico: <span>*</span></label>
+                                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                                        </div>
+                                        
+                                    <div class="seplabel">
+                                        <label for="telefono">Teléfono:</label>
+                                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono de contacto">
+                                    </div>
+                        
+                                        
+                                    </div>
+                                    <div class="infocli">
+                                        <div class="seplabel requerido">
+                                            <label for="fechaNacimiento">Fecha de Nacimiento: <span>*</span></label>
+                                            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                                        </div>
+                                    
+                                    </div>
+                                </fieldset>
+                        </div>
+                                    
+                        <div class="formularios">
+                            <fieldset class="tipoentrada">
+                                <legend>Tipo de Entrada</legend>
+                                        <div class="entradatipo">
+                                        <p>Elige el tipo de entrada que prefieres para tu experiencia en el Amped Festival. Cada opción ha sido diseñada para proporcionarte el mejor acceso y comodidades durante el evento.</p>
+
+                                        <div class="seplabel">
+                                                <label for="entrada">Selecciona tu entrada</label>
+                                                <select id="entrada" name="entrada" required>
+                                                <option value="">--Por favor elige una opción--</option>
+                                                <option value="general">Entrada General - 50€</option>
+                                                <option value="vip">Entrada VIP - 150€ (incluye acceso backstage y zona preferencial)</option>
+                                                <option value="pase">Pase de dos Días - 120€</option>
+                                            </select>
+                                            
+                                        </div>
+
+                                    </div>
+                            </div>
+                        </fieldset>
+                        
+                        <div class="formularios">
+                                <fieldset>
+                                    <div class="bloque">
+                                        <legend>Método de pago</legend>
+                                        <div class="metodopago">
+                                            <input type="radio" id="paypal" name="metodopago" value="paypal">
+                                            <label for="paypal">Paypal</label>
+                                        </div>
+                                        <div class="metodopago">
+                                            <input type="radio" id="tarjeta" name="metodopago" value="tarjeta">
+                                            <label for="tarjeta">Tarjeta de crédito</label>
+                                        </div>
+                                            
+                                        <div class="metodopago">
+                                            <input type="radio" id="bizum" name="metodopago" value="bizum">
+                                            <label for="bizum">Bizum</label>
+                                        </div> 
+                                    </div>
+                                    
+                                </fieldset>
+                        </div>
+
+                        <div class="informaciontarjeta">
+                            <fieldset>
+                                <legend>Información tarjeta:</legend>
+                                <div class="seplabelnumtarjeta">
+                                    <label for="numtarjeta">Número de tarjeta de crédito/débito:</label>
+                                    <input type="text" id="numtarjeta" name="numtarjeta" maxlength="16" min="16">
+                                </div>
+
+                                <div class="seplabeltarjeta">
+                                    <label for="expiracion">Fecha de expiración:</label>
+                                    <input type="month" id="expiracion" name="expiracion">
+                                </div>
+
+                                <div class="seplabeltarjeta">
+                                    <label for="cvc">CVC:</label>
+                                    <input type="text" id="cvc" name="cvc" placeholder="123" min="3" maxlength="3">
+                                </div> 
+                            </fieldset>
+                        </div>
+                        
+                        <div class="direccionenvio">
+                            <fieldset>
+                                <div>
+                                    <legend>Dirección de envío:</legend>
+                                    <div class="seplabeldireccion requerido">
+                                            <label for="direccion">Dirección <span>*</span>:</label>
+                                            <input class="requerido" type="text" id="direccion" name="direccion" required>
+        
+                                    </div>
+                                    
+                                    <div class="separardireccion">
+                                        <div class="seplabel requerido">
+                                            <label for="poblacion">Población <span>*</span> :</label>
+                                            <input type="text" id="poblacion" name="poblacion" required>
+                                        </div>
+                                    
+            
+                                        <div class="seplabel requerido">
+                                            <label for="codigopostal">Código postal <span>*</span>:</label>
+                                            <input type="text" id="codigopostal" name="codigopostal" required>
+                                        </div>
+                                        
+                                        <div class="seplabel">
+                                            <label for="pais">País:</label>
+                                            <input type="text" id="pais" name="pais">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            
+                                
+                            </fieldset>
+                        </section>
+
+                        <section class="comentatariosyenviar">
+                            <div class="comentarios">
+                                <label for="comentarios">Comentarios o Peticiones Especiales</label>
+                                <textarea name="comentatarios" id="" cols="30" rows="10"></textarea> 
+                            </div>
+    
+                            <div class="terminoscondiciones">
+                                <input type="checkbox" id="terminoscondiciones" name="terminoscondiciones" value=" He leído y acepto los términos y condiciones">
+                                <label for="vehicle1"> He leído y acepto los  <a href="">términos y condiciones</a> y la  <a href="">política de privacidad</a></label><br>
+                            </div>
+                            <div class="compraentradas">
+                                <button type="submit">Comprar Entrada</button>
+                            </div>
+                        </form>
+                    </div> 
+            </section>
+            
+                    
+
+            <footer id="footerinfo">
+                <div class="privacidad">
+                    <p>Aviso legal</p>
+                    <p>Política de privacidad</p>
+                    <p>Política de cookies</p>
+                </div>
+      
+                <div class="copy">
+                    <p>2023 © Pablo Agenjo Urbina </p>
+                </div>
+            </footer>
+
+
+
+                             
+           
+    </body>
+</html>
